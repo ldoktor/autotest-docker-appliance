@@ -1,5 +1,5 @@
-# TODO: Fill in FROM w/ in test code
-FROM 511136ea3c5a
-MAINTAINER cevich@redhat.com
+# Just touch a file
+FROM busybox
+MAINTAINER ldoktor@redhat.com
 ENV PATH /usr/sbin:/usr/bin
-RUN ["touch", "/touched_file"]
+RUN ["/bin/touch", "/touched_file"]

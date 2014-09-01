@@ -1,6 +1,6 @@
-# TODO: Fill in FROM w/ in test code
-FROM 511136ea3c5a
-MAINTAINER cevich@redhat.com
+# Simple image with couple of files and busybox
+FROM empty_base_image
+MAINTAINER ldoktor@redhat.com
 ADD basic_tree.tar /
 ADD basic_devices.tar /
 ENV PATH /usr/sbin:/usr/bin
